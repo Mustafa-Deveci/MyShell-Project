@@ -2,61 +2,41 @@
 #include <stdlib.h>
 #include <string.h>
 
-char input[100];
+char input[500];
 
+int main(int argc,char *argv[])
+{
 
-int main(){
-    
-    int i;
-    
-    while(1) {
-        
+    while(1){
         
         printf("myshell>>");
+        memset(input, 0, sizeof(input));
+        scanf("%[^\n]", input);
+        getchar();
         
-        getline(&satir, &bufsize, stdin); //satır okur.
-        
-        if(words != NULL){
-            
-            if(strcmp(input,"exit")==0){
-                break;
-            }
-            else if(strcmp(input ,"clear")==0){
+        if(strcmp(input,"help")==0){
                 
-            }
-            else if(strcmp(input ,"help")==0){
-                
-                
-            }
-            else if(strcmp(words[0],"cat")==0){
-                
-            }
+
+              }
+        else if(strcmp(input,"bash")==0){
+            system("bash");
         }
-        
-        return 0;
+        else if(strcmp(input,"ls")==0){
+            system("ls -ltr");
+        }
+        else if (strcmp(input, "clear")==0){
+            system("clear");
+        }
+        else if (strcmp(input, "exit")==0){
+            break;
+        }
+        else if((input, "cat" ) == input) {
+
+        }
+               else{
+            printf("Yanlış bir komut girdiniz, yardım için 'help' komutunu girebilirsiniz\n");
+        }
     }
+    return 0;
+   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
