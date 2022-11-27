@@ -12,11 +12,11 @@ hale gelmelidir.
 
 * “bash” komutu girildiğinde sistemdeki bash programı çağırılmalıdır ve bashteki normal işlemler
 yapılabilmelidir. Bu bash’e exit yazılana kadar diğer ana prosess beklemelidir. 
-* myshell>>bash
-* bash>>echoxxx
-* xxx
-* bash>>exit
-* myshell>>
+- myshell>>bash
+- bash>>echoxxx
+- xxx
+- bash>>exit
+- myshell>>
 
 * “cat yazi...” çıktı: “cat:yazi...” 
 * “clear” ekran temizler. 
