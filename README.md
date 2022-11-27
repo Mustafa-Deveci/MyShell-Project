@@ -24,8 +24,8 @@ yapılabilmelidir. Bu bash’e exit yazılana kadar diğer ana prosess beklemeli
 
 * “execx” isminde “-t times program” parameter alan bir program yazılmalıdır. Bu program verilen
 programın girilen adet kadar artarda çalıştırmalıdır. Çalışma arka planda olmalı myshell devam etmelidir. Program sağında kalan parametreler alt programa parametre olarak geçmelidir. Execx her bir çocuk porses oluşturduğunda prosesin işini bitirmesini beklemelidir.
-* myshell>>execx-t3wriref
-* myshell>> execx -t 3 wriref -f myfile
+- myshell>>execx-t3wriref
+- myshell>> execx -t 3 wriref -f myfile
 
 * “writef” isimli bir program yazılmalıdır. Bu program -f “file name” almalıdır. Eğer parameter olarak
 verilen dosya varsa “append” yani sonuna ekleme yapmalı, eğer yoksa dosyayı oluşturup içine
