@@ -1,33 +1,32 @@
-# MyShell-Project
-Operating Systems course myShell project   
+# MyShell Project
+Operating Systems course myShell project
 
-* Shell komut satırı “myshell >>” olarak görülmelidir
+* Shell command info should be seen as "myshell >>"
 
-* “exit” komutu girilene kadar çıkış olamaz. Her seferinde “myshell>>” olarak yeni komut satırına izin
-vermelidir. 
+* You cannot exit until the “exit” contest is entered. Allowing new command information as "myshell>>" every time
+should give.
 
-* Eğer shellde olmayan bir komut, hatalı bir komut girilmişse(parametre hatası) ya da çağırılan
-programlarda bir hata olduğunda “yanlis bir komut girdiniz” yazmalı ve myshell tekrar komut alabilir
-hale gelmelidir.
+* Shell If a command that does not exist, an incorrect command is entered (parameter error), or the invoked
+when there is an error in the programs, it should write "you entered a wrong command" and myshell can be commanded again
+should become.
 
-* “bash” komutu girildiğinde sistemdeki bash programı çağırılmalıdır ve bashteki normal işlemler
-yapılabilmelidir. Bu bash’e exit yazılana kadar diğer ana prosess beklemelidir. 
-- myshell>>bash
+* When the "bash" decision is entered, the bash program in the system should be called and normal operations in bash
+should be done. The other main process must wait until output is written to this bash.
+- my shell >> bash
 - bash>>echoxxx
 - xxx
 - bash>>exit
-- myshell>>
+- my shell>>
 
-* “cat yazi...” çıktı: “cat:yazi...” 
-* “clear” ekran temizler. 
-* “ls” klasör içesindeki dosyaları gösterir.
+* “cat text...” output: “cat:text...”
+* Wash “clear” screen.
+* Shows the files in the "ls" folder.
 
-* “execx” isminde “-t times program” parameter alan bir program yazılmalıdır. Bu program verilen
-programın girilen adet kadar artarda çalıştırmalıdır. Çalışma arka planda olmalı myshell devam etmelidir. Program sağında kalan parametreler alt programa parametre olarak geçmelidir. Execx her bir çocuk porses oluşturduğunda prosesin işini bitirmesini beklemelidir.
+* A program with the name “execx” that takes “-t times program” parameter should be written. This program has been given
+should run the programs in succession as many as the number entered. Myshell should continue running in the background. The remainder of the program must be passed to the right as a parameter to the subprogram. Execx should wait for the process to finish its work each time it creates child porcelains.
 - myshell>>execx-t3wriref
-- myshell>> execx -t 3 wriref -f myfile
+- my shell>> execx -t 3 wriref -f my file
 
-* “writef” isimli bir program yazılmalıdır. Bu program -f “file name” almalıdır. Eğer parameter olarak
-verilen dosya varsa “append” yani sonuna ekleme yapmalı, eğer yoksa dosyayı oluşturup içine
-yazmalıdır. Dosya içine system saatini, pid ve ppid değerini tek satır halinde yazmalıdır. 
-
+* A program named “writef” should be written. This program should take -f "filename". if as a parameter
+If the given file exists, they should append "append", if not, create something and add it.
+should write. It should write the system time, pid and ppid value in the file in one line.
